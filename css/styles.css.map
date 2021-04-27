@@ -1,0 +1,16 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,CAAC,CAAE;EACC,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,UAAU;CACzB",
+    "sources": [
+        "styles.scss",
+        "scss/_variables.scss",
+        "scss/_base.scss",
+        "scss/_mixins.scss",
+        "scss/_header.scss",
+        "scss/_sec-izquierda.scss",
+        "scss/_sec-central.scss",
+        "scss/_sec-derecha.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}
