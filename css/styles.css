@@ -27,14 +27,23 @@ body {
 }
 
 .sec-central nav .navbar-toggler {
+  color: black;
+  border-color: rgba(0, 0, 0, 0.2);
   padding: 1rem 1.5rem;
   font-size: 1.25rem;
   border: solid 1px black;
 }
 
-.sec-central nav .navbar-light .navbar-toggler {
-  color: black;
-  border-color: rgba(0, 0, 0, 0.2);
+.sec-central nav .navbar-collapse ul li a {
+  color: #363d44;
+}
+
+.sec-central nav .navbar-collapse ul li a:hover {
+  font-weight: bold;
+}
+
+.sec-central nav .navbar-collapse a:focus {
+  border-bottom: solid 3px #3B49DF;
 }
 
 .sec-central .art-var li {
@@ -54,9 +63,9 @@ body {
     border-radius: 5px;
   }
   .sec-central nav .dropdown .a-btn:focus {
-    border: solid 1px blue;
-    -webkit-box-shadow: 1px 1px blue;
-            box-shadow: 1px 1px blue;
+    border: solid 1px #3B49DF;
+    -webkit-box-shadow: 1px 1px #3B49DF;
+            box-shadow: 1px 1px #3B49DF;
   }
   .sec-central nav .dropdown-menu {
     min-width: 0;

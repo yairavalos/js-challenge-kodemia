@@ -5,7 +5,7 @@
 
     
     nav  {
-         background-color: $color-primario;  
+         background-color: $color-primario;
 
          .navbar-brand  {
             font-weight:bolder;
@@ -15,16 +15,33 @@
             display: none;
         }
         
+
         .navbar-toggler {
+            color: rgba(0,0,0,1.5);
+            border-color: rgba(0,0,0,0.2);
             padding: 1rem 1.5rem;
             font-size: 1.25rem;
             border: solid 1px black;
-        }
-        
-        .navbar-light .navbar-toggler {
-            color: rgba(0,0,0,1.5);
-            border-color: rgba(0,0,0,0.2);
         }    
+      
+        .navbar-collapse {
+
+            ul {
+                li a{
+                    color: #363d44  ;
+                }
+
+                li a:hover {
+                    font-weight: bold;
+                }
+            }
+
+            a:focus {
+                border-bottom: solid 3px #3B49DF;
+
+            }
+        }
+    
 
     }
 
@@ -54,8 +71,8 @@
                 }
 
                 .a-btn:focus {
-                    border:solid 1px blue;
-                    box-shadow: 1px 1px blue;
+                    border:solid 1px #3B49DF;
+                    box-shadow: 1px 1px #3B49DF;
                 }
             }
 
