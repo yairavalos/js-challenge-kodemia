@@ -39,7 +39,7 @@ body {
   color: #363d44;
 }
 
-.sec-central nav .navbar-collapse ul li a:hover {
+.sec-central nav .navbar-collapse ul li a:focus {
   font-weight: bold;
 }
 
