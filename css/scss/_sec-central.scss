@@ -1,24 +1,49 @@
 // Ferdinand 
 .sec-central  {
-    background-color: #EEF0F1;
+    background-color: $color-primario;
+    padding: 0;
     
     nav  {
-         background-color: #EEF0F1;  
+         background-color: $color-primario;
 
-         .navbar-brand  {
+        .navbar-brand  {
             font-weight:bolder;
+            color: black;
+    
+        }
+
+        .dropdown  {
+            display: none;
         }
         
+
         .navbar-toggler {
+            color: rgba(0,0,0,1.5);
+            border-color: rgba(0,0,0,0.2);
             padding: 1rem 1.5rem;
             font-size: 1.25rem;
             border: solid 1px black;
+        }    
+      
+        .navbar-collapse {
+
+            ul {
+                li a{
+                    color: #363d44  ;
+                }
+
+                li a:focus {
+                    font-weight: bold;
+                }
+            }
+
+            a:focus {
+                border-bottom: solid 3px #3B49DF;
+
+            }
         }
-        
-        .navbar-light .navbar-toggler {
-            color: rgba(0,0,0,1.5);
-            border-color: rgba(0,0,0,0.2);
-        }      
+    
+
     }
 
     .art-var  {
@@ -31,5 +56,52 @@
 }
 
 
+@media only screen and (max-width:576px) {
+    .sec-central  {
+        nav  {
 
+            .dropdown  {
+                display: unset;
+                background-color: white;
+                
+                .a-btn {
+                    text-decoration: none;
+                    color: inherit;
+                    border: solid 1px black;
+                    border-radius: 5px;
+                }
 
+                .a-btn:focus {
+                    border:solid 1px #3B49DF;
+                    box-shadow: 1px 1px #3B49DF;
+                }
+            }
+
+            .dropdown-menu  {
+                min-width: 0;
+                border-radius: 0;
+                font-size: small;
+                top: unset;
+                padding: unset;
+                border: solid 1px black;
+            }
+
+            .navbar-collapse {
+            display: none;
+            }
+
+            .dropdown-item  {
+                padding: .3rem 1.1rem;
+                font-size: initial;
+            }
+    
+            .navbar-nav {
+                width: 7rem;
+            }
+
+            li  {
+                list-style: none;
+            }
+        }
+    }
+}

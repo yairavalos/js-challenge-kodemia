@@ -12,6 +12,7 @@ body {
 
 .sec-central {
   background-color: #EEF0F1;
+  padding: 0;
 }
 
 .sec-central nav {
@@ -20,22 +21,75 @@ body {
 
 .sec-central nav .navbar-brand {
   font-weight: bolder;
+  color: black;
+}
+
+.sec-central nav .dropdown {
+  display: none;
 }
 
 .sec-central nav .navbar-toggler {
+  color: black;
+  border-color: rgba(0, 0, 0, 0.2);
   padding: 1rem 1.5rem;
   font-size: 1.25rem;
   border: solid 1px black;
 }
 
-.sec-central nav .navbar-light .navbar-toggler {
-  color: black;
-  border-color: rgba(0, 0, 0, 0.2);
+.sec-central nav .navbar-collapse ul li a {
+  color: #363d44;
+}
+
+.sec-central nav .navbar-collapse ul li a:focus {
+  font-weight: bold;
+}
+
+.sec-central nav .navbar-collapse a:focus {
+  border-bottom: solid 3px #3B49DF;
 }
 
 .sec-central .art-var li {
   list-style: none;
   margin-top: 20px;
+}
+
+@media only screen and (max-width: 576px) {
+  .sec-central nav .dropdown {
+    display: unset;
+    background-color: white;
+  }
+  .sec-central nav .dropdown .a-btn {
+    text-decoration: none;
+    color: inherit;
+    border: solid 1px black;
+    border-radius: 5px;
+  }
+  .sec-central nav .dropdown .a-btn:focus {
+    border: solid 1px #3B49DF;
+    -webkit-box-shadow: 1px 1px #3B49DF;
+            box-shadow: 1px 1px #3B49DF;
+  }
+  .sec-central nav .dropdown-menu {
+    min-width: 0;
+    border-radius: 0;
+    font-size: small;
+    top: unset;
+    padding: unset;
+    border: solid 1px black;
+  }
+  .sec-central nav .navbar-collapse {
+    display: none;
+  }
+  .sec-central nav .dropdown-item {
+    padding: .3rem 1.1rem;
+    font-size: initial;
+  }
+  .sec-central nav .navbar-nav {
+    width: 7rem;
+  }
+  .sec-central nav li {
+    list-style: none;
+  }
 }
 
 /* Inicio sección Derecha Yair
@@ -63,6 +117,7 @@ body {
 
 .aside-right-container .card .list-group .mini-tag {
   color: gray;
+  border-color: blue;
 }
 
 .aside-right-container .card .list-group .mini-tag-btn {
