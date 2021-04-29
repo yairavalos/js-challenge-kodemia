@@ -1,12 +1,18 @@
 // Ferdinand 
 .sec-central  {
-    background-color: #EEF0F1;
+    background-color: $color-primario;
+    padding: 0;
+
     
     nav  {
-         background-color: #EEF0F1;  
+         background-color: $color-primario;  
 
          .navbar-brand  {
             font-weight:bolder;
+        }
+
+        .dropdown  {
+            display: none;
         }
         
         .navbar-toggler {
@@ -18,7 +24,8 @@
         .navbar-light .navbar-toggler {
             color: rgba(0,0,0,1.5);
             border-color: rgba(0,0,0,0.2);
-        }      
+        }    
+
     }
 
     .art-var  {
@@ -31,5 +38,52 @@
 }
 
 
+@media only screen and (max-width:576px) {
+    .sec-central  {
+        nav  {
 
+            .dropdown  {
+                display: unset;
+                background-color: white;
+                
+                .a-btn {
+                    text-decoration: none;
+                    color: inherit;
+                    border: solid 1px black;
+                    border-radius: 5px;
+                }
 
+                .a-btn  {
+                    border:solid 1px blue;
+                    box-shadow: 1px 1px blue;
+                }
+            }
+
+            .dropdown-menu  {
+                min-width: 0;
+                border-radius: 0;
+                font-size: small;
+                top: unset;
+                padding: unset;
+                border: solid 1px black;
+            }
+
+            .navbar-collapse {
+            display: none;
+            }
+
+            .dropdown-item  {
+                padding: .3rem 1.1rem;
+                font-size: initial;
+            }
+    
+            .navbar-nav {
+                width: 7rem;
+            }
+
+            li  {
+                list-style: none;
+            }
+        }
+    }
+}

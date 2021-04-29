@@ -7,9 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <link rel="stylesheet" href="/css/styles.css">
   <script src="https://kit.fontawesome.com/df6ea92ceb.js" crossorigin="anonymous"></script>
-  <title>Desafio 02 - Replica-Web(dev.to</title>
   <link rel="stylesheet" href="./css/styles.css">
   <title>Desafio 02 - Replica-Web(dev.to)</title>
 </head>
@@ -31,7 +29,6 @@
 
         <section class="row">
           <!-- Seccion Izquierda Rosy -->
-
           <section class="col-md-3 col-lg-3 d-none d-md-block border">
             <nav class="mb-6">
               <button type="button" class="btn btn-light col-12 d-flex justify-content-start"> <span><img
@@ -142,14 +139,9 @@
           <!-- Seccion Central Ferdi -->
           <section class="sec-central col-12 col-md-9 col-lg-6 border">
             <!-- Header -->
-            <nav class="navbar navbar-expand-md navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-md navbar-expand-lg navbar-light">
 
               <a class="navbar-brand" href="#">Posts</a>
-
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span>Feed <i class="fas fa-caret-down"></i></span>
-              </button>
 
               <div class="collapse navbar-collapse  d-md-flex d-lg-flex justify-content-md-end justify-content-lg-end"
                 id="navbarNav">
@@ -173,6 +165,23 @@
                     <a class="nav-link" href="#">Latest</a>
                   </li>
                 </ul>
+              </div>
+
+              <!-- Lista desplegable en mobile -->
+              <div class="feed-btn">
+                <li class="nav-item dropdown">
+                  <a class="a-btn nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                    data-toggle="dropdown" aria-expanded="false">
+                    Feed
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="#">Feed</a></li>
+                    <li><a class="dropdown-item" href="#">Week</a></li>
+                    <li><a class="dropdown-item" href="#">Month</a></li>
+                    <li><a class="dropdown-item" href="#">Year</a></li>
+                    <li><a class="dropdown-item" href="#">Infinity</a></li>
+                    <li><a class="dropdown-item" href="#">Lastest</a></li>
+                  </ul>
               </div>
             </nav>
 

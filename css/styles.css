@@ -11,6 +11,7 @@ body {
 
 .sec-central {
   background-color: #EEF0F1;
+  padding: 0;
 }
 
 .sec-central nav {
@@ -19,6 +20,10 @@ body {
 
 .sec-central nav .navbar-brand {
   font-weight: bolder;
+}
+
+.sec-central nav .dropdown {
+  display: none;
 }
 
 .sec-central nav .navbar-toggler {
@@ -35,5 +40,44 @@ body {
 .sec-central .art-var li {
   list-style: none;
   margin-top: 20px;
+}
+
+@media only screen and (max-width: 576px) {
+  .sec-central nav .dropdown {
+    display: unset;
+    background-color: white;
+  }
+  .sec-central nav .dropdown .a-btn {
+    text-decoration: none;
+    color: inherit;
+    border: solid 1px black;
+    border-radius: 5px;
+  }
+  .sec-central nav .dropdown .a-btn {
+    border: solid 1px blue;
+    -webkit-box-shadow: 1px 1px blue;
+            box-shadow: 1px 1px blue;
+  }
+  .sec-central nav .dropdown-menu {
+    min-width: 0;
+    border-radius: 0;
+    font-size: small;
+    top: unset;
+    padding: unset;
+    border: solid 1px black;
+  }
+  .sec-central nav .navbar-collapse {
+    display: none;
+  }
+  .sec-central nav .dropdown-item {
+    padding: .3rem 1.1rem;
+    font-size: initial;
+  }
+  .sec-central nav .navbar-nav {
+    width: 7rem;
+  }
+  .sec-central nav li {
+    list-style: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
