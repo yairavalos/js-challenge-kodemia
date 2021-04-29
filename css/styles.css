@@ -20,6 +20,7 @@ body {
 
 .sec-central nav .navbar-brand {
   font-weight: bolder;
+  color: black;
 }
 
 .sec-central nav .dropdown {

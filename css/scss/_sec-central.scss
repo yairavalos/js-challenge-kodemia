@@ -2,13 +2,14 @@
 .sec-central  {
     background-color: $color-primario;
     padding: 0;
-
     
     nav  {
          background-color: $color-primario;
 
-         .navbar-brand  {
+        .navbar-brand  {
             font-weight:bolder;
+            color: black;
+    
         }
 
         .dropdown  {
