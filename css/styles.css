@@ -155,11 +155,12 @@ img.img-circle {
   margin-top: 20px;
 }
 
-.sec-central .card-body .p-info a {
+.sec-central .card-body .p-info .p-title a {
   text-decoration: none;
+  color: black;
 }
 
-.sec-central .card-body .p-info .p-title h4 {
+.sec-central .card-body .p-info .p-title a h4 {
   font-weight: bolder;
 }
 
@@ -230,30 +231,42 @@ img.img-circle {
   margin-right: 25px;
 }
 
-.discussion .card-body {
-  padding: 0;
+.discussion {
+  border-top: solid 0.5px #e0e0e0;
+  margin-top: 5rem;
 }
 
-.discussion form button {
+.discussion .pre-diss {
+  margin-top: 2rem;
+}
+
+.discussion .pre-diss button {
+  border: solid 2px #e0e0e0;
+  font-weight: normal;
+  color: #615f5f;
+}
+
+.discussion .pre-diss button:hover {
+  background-color: #e0e0e0;
+  border-color: grey;
+}
+
+.discussion .formm .btn {
   display: none;
   width: auto;
-  margin-right: 5px;
 }
 
-.discussion form .form-group:focus-within {
+.discussion .formm .displayed-btn {
+  display: none;
+}
+
+.discussion .formm .form-group:focus-within .f-first {
   border: solid 1px #3B49DF;
   -webkit-box-shadow: 1px 1px #3B49DF;
           box-shadow: 1px 1px #3B49DF;
 }
 
-.discussion form .form-group:focus-within textarea {
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  height: 8rem;
-}
-
-.discussion form .form-group:focus-within .btn {
+.discussion .formm .form-group:focus-within .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,10 +279,49 @@ img.img-circle {
   background-color: #F9FAFA;
   padding: 5px;
   border-top: solid 0.5px #989999;
+  text-align: center;
 }
 
-.discussion form .form-group:focus-within button {
+.discussion .formm .form-group:focus-within .btn p {
+  margin-bottom: 0;
+  margin-right: 10px;
+  color: #615f5f;
+}
+
+.discussion .formm .form-group:focus-within textarea {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  height: 6rem;
+}
+
+.discussion .formm .form-group:focus-within .displayed-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+.discussion .formm .form-group:focus-within .displayed-btn .d-btn {
+  font-size: small;
+  border: none;
+  background-color: #E4E6E9;
+  color: #ACAFB3;
+  margin-right: 10px;
+}
+
+.discussion .formm .form-group:focus-within .displayed-btn .d-btn:first-child {
+  background-color: #8992EC;
+  color: white;
+  font-weight: bold;
+}
+
+.discussion .formm button {
   display: unset;
+}
+
+.discussion .card-body {
+  padding: 0;
 }
 
 @media only screen and (max-width: 576px) {
