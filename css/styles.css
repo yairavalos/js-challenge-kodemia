@@ -63,7 +63,7 @@ body {
   text-decoration: none;
 }
 
-.left-post .react-post ul li a {
+.left-post .react-post ul li {
   list-style: none;
 }
 
@@ -129,6 +129,10 @@ body {
 
 .sec-central .card-body .p-info {
   margin-top: 20px;
+}
+
+.sec-central .card-body .p-info a {
+  text-decoration: none;
 }
 
 .sec-central .card-body .p-info .p-title h4 {
