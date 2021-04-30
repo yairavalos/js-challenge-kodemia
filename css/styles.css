@@ -13,6 +13,7 @@ body {
 .sec-central {
   background-color: #EEF0F1;
   padding: 0;
+  margin: 0;
 }
 
 .sec-central nav {
@@ -48,9 +49,67 @@ body {
   border-bottom: solid 3px #3B49DF;
 }
 
+.sec-central .card-body {
+  padding: 10px;
+}
+
+.sec-central .card-body .post-info .avatar-info img {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  border-radius: 100px;
+}
+
+.sec-central .card-body .post-info .avatar-info p {
+  margin: 0;
+  font-size: 12px;
+  color: #4D5760;
+}
+
+.sec-central .card-body .post-info .avatar-info p:first-child {
+  font-weight: bold;
+}
+
+.sec-central .card-body .post-info .p-info {
+  margin-top: 20px;
+}
+
+.sec-central .card-body .post-info .p-info .p-title h4 {
+  font-weight: bolder;
+}
+
+.sec-central .card-body .post-info .p-info .p-hashtags a {
+  text-decoration: none;
+  color: #6a6c6d;
+  font-size: 13px;
+  margin: 0 2px;
+}
+
+.sec-central .card-body .post-info .p-info .p-engage {
+  margin-top: 15px;
+}
+
+.sec-central .card-body .post-info .p-info .p-engage .p-likes-c i {
+  color: #4D5760;
+  margin-right: 20px;
+}
+
+.sec-central .card-body .post-info .p-info .p-engage .read-save small {
+  color: #4D5760;
+  margin-right: 5px;
+}
+
+.sec-central .card-body .post-info .p-info .p-engage .read-save button {
+  background-color: #D2D6DB;
+  border: none;
+  border-radius: 5px;
+  width: 50px;
+  height: 30px;
+}
+
 .sec-central .art-var li {
   list-style: none;
-  margin-top: 20px;
+  margin-top: 7px;
 }
 
 @media only screen and (max-width: 576px) {
