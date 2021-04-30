@@ -180,17 +180,10 @@
 
 
           <!-- Seccion Central Ferdi -->
-          <section class="sec-central col-12 col-md-9 col-lg-6 border">
+          <section class="sec-central col-12 col-md-9 col-lg-6">
             <!-- Header -->
-            <nav class="navbar navbar-expand-md navbar-expand-lg navbar-light bg-light">
-
+            <nav class="navbar navbar-expand-md navbar-expand-lg">
               <a class="navbar-brand" href="#">Posts</a>
-
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span>Feed <i class="fas fa-caret-down"></i></span>
-              </button>
-
               <div class="collapse navbar-collapse  d-md-flex d-lg-flex justify-content-md-end justify-content-lg-end"
                 id="navbarNav">
                 <ul class="navbar-nav">
@@ -213,6 +206,23 @@
                     <a class="nav-link" href="#">Latest</a>
                   </li>
                 </ul>
+              </div>
+
+              <!-- Lista desplegable en mobile -->
+              <div class="feed-btn">
+                <li class="nav-item dropdown">
+                  <a class="a-btn nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                    data-toggle="dropdown" aria-expanded="false">
+                    Feed
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="#">Feed</a></li>
+                    <li><a class="dropdown-item" href="#">Week</a></li>
+                    <li><a class="dropdown-item" href="#">Month</a></li>
+                    <li><a class="dropdown-item" href="#">Year</a></li>
+                    <li><a class="dropdown-item" href="#">Infinity</a></li>
+                    <li><a class="dropdown-item" href="#">Lastest</a></li>
+                  </ul>
               </div>
             </nav>
 
@@ -311,31 +321,93 @@
 
           <!-- Seccion Derecha Yair -->
           <section class="col-lg-3 d-none d-lg-block border">
-            Columna Derecha Yair
+
+            <!--Cards Container-->
             <aside class="aside-right-container">
-              <section class="section-topic-container">
-                <header class="mini-header">
-                  <h3>
-                    Topic-Title
-                  </h3>
-                  <div class="see-more">
-                    <a href="">See more</a>
-                  </div>
-                </header>
-                <article class="subcard-container">
-                  <a href="" class="sub-card">
-                    <div class="sub-content">Content Here</div>
-                    <div class="secondary-tag">Content Tag</div>
+
+              <!--Card Listings-->
+              <div class=" card">
+                <div class="card-header d-lg-flex justify-content-between">
+                  <h4>Card Header</h4>
+                  <div><a href="">See more...</a></div>
+                </div>
+                <div class="list-group list-group-flush">
+                  <a href="" class="list-group-item btn btn-light">
+                    <div class="subcard-content">Content Description around here</div>
+                    <div class="mini-tag">Mini-Tag</div>
                   </a>
-                  <a href="" class="sub-card">
-                    <div class="sub-content">Content Here</div>
-                    <div class="sub-tag">Content Tag</div>
+                  <a href="" class="list-group-item btn btn-light">
+                    <div class="subcard-content">Content Description around here</div>
+                    <div class="mini-tag">Mini-Tag</div>
                   </a>
-                </article>
-                <footer class="mini-footer">
-                  <a href="" class="anchor-footer">Topic End</a>
-                </footer>
-              </section>
+                  <a href="" class="list-group-item btn btn-light">
+                    <div class="subcard-content">Content Description around here</div>
+                    <div class="mini-tag">Mini-Tag</div>
+                  </a>
+                  <a href="" class="list-group-item btn btn-light">
+                    <div class="subcard-content">Content Description around here</div>
+                    <div class="mini-tag">Mini-Tag</div>
+                  </a>
+                  <a href="" class="list-group-item btn btn-light">
+                    <div class="subcard-content">Content Description around here</div>
+                    <div class="mini-tag">Mini-Tag</div>
+                  </a>
+                  <a href="" class="list-group-item btn btn-light">
+                    <div class="mini-footer">Card Footer</div>
+                  </a>
+                </div>
+              </div>
+
+              <!--Card News-->
+              <div class=" card">
+                <div class="card-header d-lg-flex justify-content-between">
+                  <h4>Card Header</h4>
+                </div>
+                <div class="list-group list-group-flush">
+                  <a href="" class="list-group-item btn btn-light">
+                    <div class="subcard-content">Content Description around here</div>
+                    <div class="mini-tag-btn">New</div>
+                  </a>
+                  <a href="" class="list-group-item btn btn-light">
+                    <div class="subcard-content">Content Description around here</div>
+                    <div class="mini-tag">Mini-Tag</div>
+                  </a>
+                  <a href="" class="list-group-item btn btn-light">
+                    <div class="subcard-content">Content Description around here</div>
+                    <div class="mini-tag-btn">New</div>
+                  </a>
+                  <a href="" class="list-group-item btn btn-light">
+                    <div class="subcard-content">Content Description around here</div>
+                    <div class="mini-tag-btn">New</div>
+                  </a>
+                  <a href="" class="list-group-item btn btn-light">
+                    <div class="subcard-content">Content Description around here</div>
+                    <div class="mini-tag">Mini-Tag</div>
+                  </a>
+                  <a href="" class="list-group-item btn btn-light">
+                    <div class="subcard-content">Content Description around here</div>
+                    <div class="mini-tag-btn">New</div>
+                  </a>
+                </div>
+              </div>
+
+              <!--Card HELP-->
+              <div class=" card">
+                <div class="card-header d-lg-flex justify-content-between">
+                  <h4>Card Header</h4>
+                </div>
+                <div class="list-group list-group-flush">
+                  <a href="" class="list-group-item btn btn-light">
+                    <div class="subcard-content">Content Description around here</div>
+                    <div class="mini-tag-btn">New</div>
+                  </a>
+                  <a href="" class="list-group-item btn btn-light">
+                    <div class="subcard-content">Content Description around here</div>
+                    <div class="mini-tag-btn">New</div>
+                  </a>
+                </div>
+              </div>
+
             </aside>
 
           </section>
@@ -417,6 +489,21 @@
       </div>
     </div>
   </footer>
+
+  <!-- Footer -->
+  <div class="container-flui">
+    <div class="row">
+      <div class="container border border-primary">
+        <div class="row">
+          <div class="col">
+            <p>footer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -64,6 +65,7 @@ body {
 
 .sec-central {
   background-color: #EEF0F1;
+  padding: 0;
 }
 
 .sec-central nav {
@@ -72,17 +74,31 @@ body {
 
 .sec-central nav .navbar-brand {
   font-weight: bolder;
+  color: black;
+}
+
+.sec-central nav .dropdown {
+  display: none;
 }
 
 .sec-central nav .navbar-toggler {
+  color: black;
+  border-color: rgba(0, 0, 0, 0.2);
   padding: 1rem 1.5rem;
   font-size: 1.25rem;
   border: solid 1px black;
 }
 
-.sec-central nav .navbar-light .navbar-toggler {
-  color: black;
-  border-color: rgba(0, 0, 0, 0.2);
+.sec-central nav .navbar-collapse ul li a {
+  color: #363d44;
+}
+
+.sec-central nav .navbar-collapse ul li a:focus {
+  font-weight: bold;
+}
+
+.sec-central nav .navbar-collapse a:focus {
+  border-bottom: solid 3px #3B49DF;
 }
 
 .sec-central .art-var li {
@@ -90,6 +106,98 @@ body {
   margin-top: 20px;
 }
 
+@media only screen and (max-width: 576px) {
+  .sec-central nav .dropdown {
+    display: unset;
+    background-color: white;
+  }
+  .sec-central nav .dropdown .a-btn {
+    text-decoration: none;
+    color: inherit;
+    border: solid 1px black;
+    border-radius: 5px;
+  }
+  .sec-central nav .dropdown .a-btn:focus {
+    border: solid 1px #3B49DF;
+    -webkit-box-shadow: 1px 1px #3B49DF;
+            box-shadow: 1px 1px #3B49DF;
+  }
+  .sec-central nav .dropdown-menu {
+    min-width: 0;
+    border-radius: 0;
+    font-size: small;
+    top: unset;
+    padding: unset;
+    border: solid 1px black;
+  }
+  .sec-central nav .navbar-collapse {
+    display: none;
+  }
+  .sec-central nav .dropdown-item {
+    padding: .3rem 1.1rem;
+    font-size: initial;
+  }
+  .sec-central nav .navbar-nav {
+    width: 7rem;
+  }
+  .sec-central nav li {
+    list-style: none;
+  }
+}
+
+/* Inicio sección Derecha Yair
+----------------------------------------------------------
+*/
+.aside-right-container .card {
+  margin-bottom: 40px;
+}
+
+.aside-right-container .card .card-header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aside-right-container .card .card-header div {
+  font-size: 11px;
+}
+
+.aside-right-container .card .list-group .subcard-content, .aside-right-container .card .list-group .mini-tag, .aside-right-container .card .list-group .mini-tag-btn {
+  font-size: 11px;
+  text-align: initial;
+  margin-bottom: 10px;
+}
+
+.aside-right-container .card .list-group .mini-tag {
+  color: gray;
+  border-color: blue;
+}
+
+.aside-right-container .card .list-group .mini-tag-btn {
+  background-color: blue;
+  border: 1px solid blue;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  width: 35px;
+}
+
+.aside-right-container .card .mini-footer {
+  font-size: 12px;
+  text-align: center;
+}
+
+.aside-right-container .card .btn:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.aside-right-container .card .btn:hover .subcard-content, .aside-right-container .card .btn:hover .mini-footer {
+  color: blue;
+}
+
+/* Final sección Derecha Yair
+----------------------------------------------------------
+*/
 .footer-container .row .footer .footer-nv ul .p-2 a {
   list-style: none;
 }
