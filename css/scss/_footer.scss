@@ -1,27 +1,48 @@
 .footer-container {
   background-color: #d2d6db;
   padding: 48px;
+  position: relative;
 
 
   .row {
     .footer {
-      width: 75%;
+      width: 50%;
       margin: 0 auto;
 
 
       .footer-nv {
         .lista {
           .p-2 {
-            list-style: none;
+            color: #202428;
+            text-decoration: none;
           }
 
-          .pt-4 {
-            .redes {
-              li {
-                a {
-                  list-style: none;
-                }
-              }
+          list-style: none;
+
+          a {
+            color: #202428;
+            text-decoration: none;
+          }
+
+          a:hover {
+            color: #3b49df;
+          }
+        }
+      }
+
+      .pt-2 {
+
+
+        .redes {
+          li {
+            list-style: none;
+
+            a {
+              color: #64707d;
+            }
+
+            a:hover {
+              color: #4d5760;
             }
           }
         }
@@ -35,7 +56,23 @@
         margin: 0 auto;
       }
 
-      .mb-2 {
+      p {
+        text-align: center;
+        color: #4d5760;
+        font-size: 14px;
+
+        a {
+          color: #202428;
+
+        }
+
+        a:hover {
+          color: #3b49df;
+          text-decoration: none;
+        }
+      }
+
+      .mb-1 {
         p {
           text-align: center;
           color: #4d5760;
@@ -43,19 +80,69 @@
 
           a {
             color: #202428;
-            ;
+
+          }
+
+          a:hover {
+            color: #3b49df;
+            text-decoration: none;
           }
         }
 
 
         div {
+          text-align: center;
 
           a {
             text-align: center;
+            color: #1ab3a6
           }
         }
       }
 
+    }
+
+  }
+
+  .pet {
+    img {
+      width: 50px;
+      position: absolute;
+      top: -2px;
+      right: 48px;
+      display: block;
+      transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+  }
+
+  .pet img:hover {
+    transform: rotate(-5deg);
+  }
+}
+
+@media screen and (max-width:768px) {
+  .footer-container {
+    .pet {
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:320px) {
+  .footer-container {
+
+    .row {
+      .footer {
+        width: 100%;
+      }
+    }
+
+    .pet {
+      img {
+        display: none;
+      }
     }
   }
 }
