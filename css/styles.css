@@ -87,9 +87,14 @@ img.img-circle {
   text-decoration: none;
 }
 
+.left-post .react-post ul li {
+  list-style: none;
+}
+
 .sec-central {
   background-color: #EEF0F1;
   padding: 0;
+  margin: 0;
 }
 
 .sec-central nav {
@@ -125,9 +130,142 @@ img.img-circle {
   border-bottom: solid 3px #3B49DF;
 }
 
+.sec-central .card-body {
+  padding: 10px;
+}
+
+.sec-central .card-body .avatar-info img {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  border-radius: 100px;
+}
+
+.sec-central .card-body .avatar-info p {
+  margin: 0;
+  font-size: 12px;
+  color: #4D5760;
+}
+
+.sec-central .card-body .avatar-info p:first-child {
+  font-weight: bold;
+}
+
+.sec-central .card-body .p-info {
+  margin-top: 20px;
+}
+
+.sec-central .card-body .p-info .p-title h4 {
+  font-weight: bolder;
+}
+
+.sec-central .card-body .p-info .p-hashtags a {
+  text-decoration: none;
+  color: #6a6c6d;
+  font-size: 13px;
+  margin: 0 2px;
+}
+
+.sec-central .card-body .p-info .p-engage {
+  margin-top: 15px;
+}
+
+.sec-central .card-body .p-info .p-engage .p-likes-c i {
+  color: #4D5760;
+  margin-right: 20px;
+}
+
+.sec-central .card-body .p-info .p-engage .read-save small {
+  color: #4D5760;
+  margin-right: 5px;
+}
+
+.sec-central .card-body .p-info .p-engage .read-save button {
+  background-color: #D2D6DB;
+  border: none;
+  border-radius: 5px;
+  width: 50px;
+  height: 30px;
+}
+
 .sec-central .art-var li {
   list-style: none;
+  margin-top: 7px;
+}
+
+.p-post {
+  background-color: white;
+}
+
+.p-post .card {
   margin-top: 20px;
+}
+
+.p-post .card img {
+  width: 30px;
+  height: 30px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 10px;
+}
+
+.p-post .card h6 {
+  color: #949697;
+}
+
+.p-post .p-engage {
+  margin-top: 5px;
+}
+
+.p-post .p-engage .p-likes-c {
+  margin-left: 4.5rem;
+}
+
+.p-post .p-engage .p-likes-c i {
+  color: #4D5760;
+  margin-right: 25px;
+}
+
+.discussion .card-body {
+  padding: 0;
+}
+
+.discussion form button {
+  display: none;
+  width: auto;
+  margin-right: 5px;
+}
+
+.discussion form .form-group:focus-within {
+  border: solid 1px #3B49DF;
+  -webkit-box-shadow: 1px 1px #3B49DF;
+          box-shadow: 1px 1px #3B49DF;
+}
+
+.discussion form .form-group:focus-within textarea {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  height: 8rem;
+}
+
+.discussion form .form-group:focus-within .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F9FAFA;
+  padding: 5px;
+  border-top: solid 0.5px #989999;
+}
+
+.discussion form .form-group:focus-within button {
+  display: unset;
 }
 
 @media only screen and (max-width: 576px) {
@@ -172,32 +310,32 @@ img.img-circle {
 /* Inicio sección Derecha Yair
 ----------------------------------------------------------
 */
-.aside-right-container .card {
+.section-right-container .card {
   margin-bottom: 40px;
 }
 
-.aside-right-container .card .card-header {
+.section-right-container .card .card-header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.aside-right-container .card .card-header div {
+.section-right-container .card .card-header div {
   font-size: 11px;
 }
 
-.aside-right-container .card .list-group .subcard-content, .aside-right-container .card .list-group .mini-tag, .aside-right-container .card .list-group .mini-tag-btn {
+.section-right-container .card .list-group .subcard-content, .section-right-container .card .list-group .mini-tag, .section-right-container .card .list-group .mini-tag-btn {
   font-size: 11px;
   text-align: initial;
   margin-bottom: 10px;
 }
 
-.aside-right-container .card .list-group .mini-tag {
+.section-right-container .card .list-group .mini-tag {
   color: gray;
   border-color: blue;
 }
 
-.aside-right-container .card .list-group .mini-tag-btn {
+.section-right-container .card .list-group .mini-tag-btn {
   background-color: blue;
   border: 1px solid blue;
   border-radius: 5px;
@@ -206,23 +344,137 @@ img.img-circle {
   width: 35px;
 }
 
-.aside-right-container .card .mini-footer {
+.section-right-container .card .mini-footer {
   font-size: 12px;
   text-align: center;
 }
 
-.aside-right-container .card .btn:hover {
+.section-right-container .card .btn:hover {
   background-color: rgba(0, 0, 0, 0.03);
 }
 
-.aside-right-container .card .btn:hover .subcard-content, .aside-right-container .card .btn:hover .mini-footer {
+.section-right-container .card .btn:hover .subcard-content, .section-right-container .card .btn:hover .mini-footer {
   color: blue;
 }
 
 /* Final sección Derecha Yair
 ----------------------------------------------------------
 */
-.footer-container .row .footer .footer-nv ul .p-2 a {
+.footer-container {
+  background-color: #d2d6db;
+  padding: 48px;
+  position: relative;
+}
+
+.footer-container .row .footer {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.footer-container .row .footer .footer-nv .lista {
   list-style: none;
+}
+
+.footer-container .row .footer .footer-nv .lista .p-2 {
+  color: #202428;
+  text-decoration: none;
+}
+
+.footer-container .row .footer .footer-nv .lista a {
+  color: #202428;
+  text-decoration: none;
+}
+
+.footer-container .row .footer .footer-nv .lista a:hover {
+  color: #3b49df;
+}
+
+.footer-container .row .footer .pt-2 .redes li {
+  list-style: none;
+}
+
+.footer-container .row .footer .pt-2 .redes li a {
+  color: #64707d;
+}
+
+.footer-container .row .footer .pt-2 .redes li a:hover {
+  color: #4d5760;
+}
+
+.footer-container .row .footer hr {
+  border: none;
+  border-top: 1px solid #4d5760;
+  opacity: 0.15;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.footer-container .row .footer p {
+  text-align: center;
+  color: #4d5760;
+  font-size: 14px;
+}
+
+.footer-container .row .footer p a {
+  color: #202428;
+}
+
+.footer-container .row .footer p a:hover {
+  color: #3b49df;
+  text-decoration: none;
+}
+
+.footer-container .row .footer .mb-1 p {
+  text-align: center;
+  color: #4d5760;
+  font-size: 14px;
+}
+
+.footer-container .row .footer .mb-1 p a {
+  color: #202428;
+}
+
+.footer-container .row .footer .mb-1 p a:hover {
+  color: #3b49df;
+  text-decoration: none;
+}
+
+.footer-container .row .footer .mb-1 div {
+  text-align: center;
+}
+
+.footer-container .row .footer .mb-1 div a {
+  text-align: center;
+  color: #1ab3a6;
+}
+
+.footer-container .pet img {
+  width: 50px;
+  position: absolute;
+  top: -2px;
+  right: 48px;
+  display: block;
+  -webkit-transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.footer-container .pet img:hover {
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container .pet img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer-container .row .footer {
+    width: 100%;
+  }
+  .footer-container .pet img {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
