@@ -1,5 +1,6 @@
 .left.col-md-3.col-lg-3.d-none.d-md-block {
   .mb-6 {
+    z-index: +2;
 
     .btn-light {
       background: #eef0f1;
@@ -73,12 +74,83 @@
 
 .left-post {
   .react-post {
-    ul {
+    z-index: 2;
+    position: fixed;
+
+    .d-flex {
+
+
       li {
         list-style: none;
 
+        .corazon {
+          color: #363d44;
 
+        }
+
+        .corazon:hover {
+          color: crimson;
+
+          background-color: rgba(220, 24, 24, 0.1);
+          border-radius: 50%;
+          scale: 1.2;
+
+
+        }
+
+
+        .unicornio {
+          color: #363d44;
+
+        }
+
+        .unicornio:hover {
+          color: #26d9ca;
+          background-color: rgba(38, 217, 202, 0.1);
+
+          border-radius: 50%;
+
+        }
+
+        .ribon {
+          color: #363d44;
+
+        }
+
+        .ribon:hover {
+          color: #404edf;
+          background-color: rgba(59, 73, 223, 0.1);
+
+          border-radius: 50%;
+        }
+
+        .puntos {
+          color: #64707d;
+        }
+
+        .puntos:hover {
+          color: #202428;
+          background-color: rgba(8, 9, 10, 0.1);
+          border-radius: 50%;
+        }
       }
     }
+
+  }
+}
+
+@media only screen and (max-width:360px) {
+  .left-post {
+    .react-post {
+      position: fixed;
+      bottom: 0px;
+      left: 0px;
+      align-items: center;
+      background-color: #eef0f1;
+      width: 100vw;
+
+    }
+
+
   }
 }
