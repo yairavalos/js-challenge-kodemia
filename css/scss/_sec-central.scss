@@ -51,7 +51,7 @@
         .card-body  {
             padding: 10px;
 
-            .post-info  {
+           // .post-info  {
 
                 .avatar-info  {
                     img  {
@@ -115,7 +115,7 @@
                         }
                     }                         
                 }
-            }
+            //}
 
         }
     
@@ -127,6 +127,18 @@
         }
     }
 
+}
+
+.p-post  {
+    .p-engage {
+        margin-top: 15px;
+        .p-likes-c  {
+            i  {
+                color: #4D5760;
+                margin-right: 20px;
+            }
+        }
+    }
 }
 
 
