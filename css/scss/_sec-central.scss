@@ -48,75 +48,72 @@
     }
 
 
+
         .card-body  {
             padding: 10px;
 
-           // .post-info  {
+            .avatar-info  {
+                img  {
+                    width: 35px;
+                    height: 35px;
+                    margin-right: 10px;
+                    border-radius: 100px;
+                }
 
-                .avatar-info  {
-                    img  {
-                        width: 35px;
-                        height: 35px;
-                        margin-right: 10px;
-                        border-radius: 100px;
-                    }
+                p  {
+                    margin: 0;
+                    font-size: 12px;
+                    color: #4D5760;
+                }
 
-                    p  {
-                        margin: 0;
-                        font-size: 12px;
-                        color: #4D5760;
-                    }
+                p:first-child {
+                    font-weight: bold;
+                }
+            }
 
-                    p:first-child {
-                        font-weight: bold;
+            .p-info  {
+                margin-top: 20px;
+
+                .p-title  {
+                    h4  {
+                        font-weight: bolder;
+                    }  
+                }
+
+                .p-hashtags  {
+                    a  {
+                        text-decoration: none;
+                        color: #6a6c6d; 
+                        font-size: 13px; 
+                        margin: 0 2px;                      
                     }
                 }
 
-                .p-info  {
-                    margin-top: 20px;
-
-                    .p-title  {
-                        h4  {
-                            font-weight: bolder;
-                        }  
-                    }
-
-                    .p-hashtags  {
-                        a  {
-                            text-decoration: none;
-                            color: #6a6c6d; 
-                            font-size: 13px; 
-                            margin: 0 2px;                      
+                .p-engage {
+                    margin-top: 15px;
+                    .p-likes-c  {
+                        i  {
+                            color: #4D5760;
+                            margin-right: 20px;
                         }
                     }
 
-                    .p-engage {
-                        margin-top: 15px;
-                        .p-likes-c  {
-                            i  {
-                                color: #4D5760;
-                                margin-right: 20px;
-                            }
+                    .read-save  {
+                        small  {
+                            color: #4D5760;
+                            margin-right: 5px;
                         }
 
-                        .read-save  {
-                            small  {
-                                color: #4D5760;
-                                margin-right: 5px;
-                            }
-
-                            button  {
-                                background-color: #D2D6DB;
-                                border: none;
-                                border-radius: 5px;
-                                width: 50px;
-                                height: 30px;
-                            }
+                        button  {
+                            background-color: #D2D6DB;
+                            border: none;
+                            border-radius: 5px;
+                            width: 50px;
+                            height: 30px;
                         }
-                    }                         
-                }
-            //}
-
+                    }
+                }                         
+            }
         }
     
 
@@ -130,12 +127,65 @@
 }
 
 .p-post  {
+    background-color: white;
+    .card  {
+        margin-top: 20px;
+        img  {
+            width:30px; 
+            height:30px; 
+            align-self: flex-start; 
+            margin: 10px;
+        }
+
+        h6  {
+            color: #949697;
+        }
+    }
     .p-engage {
-        margin-top: 15px;
+        margin-top: 5px;
         .p-likes-c  {
+            margin-left: 4.5rem;
             i  {
                 color: #4D5760;
-                margin-right: 20px;
+                margin-right: 25px;
+            }
+        }
+    }
+}
+
+.discussion  {
+    .card-body  {
+        padding: 0;
+    }
+
+    form  {
+        button  {
+            display: none;
+            width:auto;
+            margin-right: 5px;
+        }
+
+        .form-group:focus-within{
+            border:solid 1px #3B49DF;
+            box-shadow: 1px 1px #3B49DF;
+
+            textarea  {
+                border: none;
+                box-shadow: none;
+                height: 8rem;
+            }
+
+            .btn  {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                background-color: #F9FAFA;
+                padding: 5px;
+                border-top: solid 0.5px #989999;
+            }
+
+            button  {
+                display: unset;
             }
         }
     }
