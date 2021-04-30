@@ -72,12 +72,18 @@
             }
 
             .p-info  {
+
                 margin-top: 20px;
 
                 .p-title  {
-                    h4  {
-                        font-weight: bolder;
-                    }  
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        h4  {
+                            font-weight: bolder;
+                        } 
+                    }
+ 
                 }
 
                 .p-hashtags  {
@@ -154,25 +160,42 @@
 }
 
 .discussion  {
-    .card-body  {
-        padding: 0;
+    border-top: solid 0.5px #e0e0e0;
+    margin-top: 5rem;
+
+    .pre-diss  {
+        margin-top: 2rem;
+
+        button {
+            border: solid 2px #e0e0e0;
+            font-weight: normal;
+            color: #615f5f;
+        }
+
+        button:hover  {
+            background-color: #e0e0e0 ;
+            border-color: grey;
+        }
     }
 
-    form  {
-        button  {
+
+
+    .formm  {
+
+        .btn  {
             display: none;
             width:auto;
-            margin-right: 5px;
+        }
+
+        .displayed-btn  {
+            display: none;
         }
 
         .form-group:focus-within{
-            border:solid 1px #3B49DF;
-            box-shadow: 1px 1px #3B49DF;
 
-            textarea  {
-                border: none;
-                box-shadow: none;
-                height: 8rem;
+            .f-first  {
+                border:solid 1px #3B49DF;
+                box-shadow: 1px 1px #3B49DF;
             }
 
             .btn  {
@@ -182,13 +205,56 @@
                 background-color: #F9FAFA;
                 padding: 5px;
                 border-top: solid 0.5px #989999;
+                text-align: center;
+
+                p  {
+                    margin-bottom: 0;
+                    margin-right: 10px;
+                    color: #615f5f
+                    
+                };
+
             }
 
-            button  {
-                display: unset;
+            textarea  {
+                border: none;
+                box-shadow: none;
+                height: 6rem;
+            }
+
+            .displayed-btn  {
+                display: flex;
+                margin-top: 10px;
+                
+                .d-btn  {
+                    font-size: small;
+                    border: none;
+                    background-color: #E4E6E9;
+                    color: #ACAFB3;
+                    margin-right: 10px;
+                }
+
+                .d-btn:first-child  {
+                    background-color: #8992EC;
+                    color: white;
+                    font-weight: bold;
+                }
             }
         }
+
+        button  {
+            display: unset;
+        }
+
+
+
+}
+
+    
+    .card-body  {
+        padding: 0;
     }
+
 }
 
 

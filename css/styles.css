@@ -10,6 +10,34 @@ body {
   background-color: #EEF0F1;
 }
 
+div.collapse {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.collapse input.form-control {
+  width: 40%;
+}
+
+div.collapse button.btn {
+  width: 25%;
+}
+
+div.media {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+img.img-circle {
+  border-radius: 50%;
+}
+
+.left.col-md-3.col-lg-3.d-none.d-md-block .mb-6 {
+  z-index: +2;
+}
+
 .left.col-md-3.col-lg-3.d-none.d-md-block .mb-6 .btn-light {
   background: #eef0f1;
   border: none;
@@ -63,8 +91,67 @@ body {
   text-decoration: none;
 }
 
-.left-post .react-post ul li {
+.left-post .react-post {
+  z-index: 2;
+  position: fixed;
+}
+
+.left-post .react-post .d-flex li {
   list-style: none;
+}
+
+.left-post .react-post .d-flex li .corazon {
+  color: #363d44;
+}
+
+.left-post .react-post .d-flex li .corazon:hover {
+  color: crimson;
+  background-color: rgba(220, 24, 24, 0.1);
+  border-radius: 50%;
+  scale: 1.2;
+}
+
+.left-post .react-post .d-flex li .unicornio {
+  color: #363d44;
+}
+
+.left-post .react-post .d-flex li .unicornio:hover {
+  color: #26d9ca;
+  background-color: rgba(38, 217, 202, 0.1);
+  border-radius: 50%;
+}
+
+.left-post .react-post .d-flex li .ribon {
+  color: #363d44;
+}
+
+.left-post .react-post .d-flex li .ribon:hover {
+  color: #404edf;
+  background-color: rgba(59, 73, 223, 0.1);
+  border-radius: 50%;
+}
+
+.left-post .react-post .d-flex li .puntos {
+  color: #64707d;
+}
+
+.left-post .react-post .d-flex li .puntos:hover {
+  color: #202428;
+  background-color: rgba(8, 9, 10, 0.1);
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 360px) {
+  .left-post .react-post {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #eef0f1;
+    width: 100vw;
+  }
 }
 
 .sec-central {
@@ -131,7 +218,12 @@ body {
   margin-top: 20px;
 }
 
-.sec-central .card-body .p-info .p-title h4 {
+.sec-central .card-body .p-info .p-title a {
+  text-decoration: none;
+  color: black;
+}
+
+.sec-central .card-body .p-info .p-title a h4 {
   font-weight: bolder;
 }
 
@@ -202,30 +294,42 @@ body {
   margin-right: 25px;
 }
 
-.discussion .card-body {
-  padding: 0;
+.discussion {
+  border-top: solid 0.5px #e0e0e0;
+  margin-top: 5rem;
 }
 
-.discussion form button {
+.discussion .pre-diss {
+  margin-top: 2rem;
+}
+
+.discussion .pre-diss button {
+  border: solid 2px #e0e0e0;
+  font-weight: normal;
+  color: #615f5f;
+}
+
+.discussion .pre-diss button:hover {
+  background-color: #e0e0e0;
+  border-color: grey;
+}
+
+.discussion .formm .btn {
   display: none;
   width: auto;
-  margin-right: 5px;
 }
 
-.discussion form .form-group:focus-within {
+.discussion .formm .displayed-btn {
+  display: none;
+}
+
+.discussion .formm .form-group:focus-within .f-first {
   border: solid 1px #3B49DF;
   -webkit-box-shadow: 1px 1px #3B49DF;
           box-shadow: 1px 1px #3B49DF;
 }
 
-.discussion form .form-group:focus-within textarea {
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  height: 8rem;
-}
-
-.discussion form .form-group:focus-within .btn {
+.discussion .formm .form-group:focus-within .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -238,10 +342,49 @@ body {
   background-color: #F9FAFA;
   padding: 5px;
   border-top: solid 0.5px #989999;
+  text-align: center;
 }
 
-.discussion form .form-group:focus-within button {
+.discussion .formm .form-group:focus-within .btn p {
+  margin-bottom: 0;
+  margin-right: 10px;
+  color: #615f5f;
+}
+
+.discussion .formm .form-group:focus-within textarea {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  height: 6rem;
+}
+
+.discussion .formm .form-group:focus-within .displayed-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+.discussion .formm .form-group:focus-within .displayed-btn .d-btn {
+  font-size: small;
+  border: none;
+  background-color: #E4E6E9;
+  color: #ACAFB3;
+  margin-right: 10px;
+}
+
+.discussion .formm .form-group:focus-within .displayed-btn .d-btn:first-child {
+  background-color: #8992EC;
+  color: white;
+  font-weight: bold;
+}
+
+.discussion .formm button {
   display: unset;
+}
+
+.discussion .card-body {
+  padding: 0;
 }
 
 @media only screen and (max-width: 576px) {
