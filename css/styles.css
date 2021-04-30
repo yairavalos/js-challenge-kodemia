@@ -63,6 +63,10 @@ body {
   text-decoration: none;
 }
 
+.left-post .react-post ul li a {
+  list-style: none;
+}
+
 .sec-central {
   background-color: #EEF0F1;
   padding: 0;
