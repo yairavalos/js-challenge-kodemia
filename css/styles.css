@@ -106,53 +106,53 @@ body {
   padding: 10px;
 }
 
-.sec-central .card-body .post-info .avatar-info img {
+.sec-central .card-body .avatar-info img {
   width: 35px;
   height: 35px;
   margin-right: 10px;
   border-radius: 100px;
 }
 
-.sec-central .card-body .post-info .avatar-info p {
+.sec-central .card-body .avatar-info p {
   margin: 0;
   font-size: 12px;
   color: #4D5760;
 }
 
-.sec-central .card-body .post-info .avatar-info p:first-child {
+.sec-central .card-body .avatar-info p:first-child {
   font-weight: bold;
 }
 
-.sec-central .card-body .post-info .p-info {
+.sec-central .card-body .p-info {
   margin-top: 20px;
 }
 
-.sec-central .card-body .post-info .p-info .p-title h4 {
+.sec-central .card-body .p-info .p-title h4 {
   font-weight: bolder;
 }
 
-.sec-central .card-body .post-info .p-info .p-hashtags a {
+.sec-central .card-body .p-info .p-hashtags a {
   text-decoration: none;
   color: #6a6c6d;
   font-size: 13px;
   margin: 0 2px;
 }
 
-.sec-central .card-body .post-info .p-info .p-engage {
+.sec-central .card-body .p-info .p-engage {
   margin-top: 15px;
 }
 
-.sec-central .card-body .post-info .p-info .p-engage .p-likes-c i {
+.sec-central .card-body .p-info .p-engage .p-likes-c i {
   color: #4D5760;
   margin-right: 20px;
 }
 
-.sec-central .card-body .post-info .p-info .p-engage .read-save small {
+.sec-central .card-body .p-info .p-engage .read-save small {
   color: #4D5760;
   margin-right: 5px;
 }
 
-.sec-central .card-body .post-info .p-info .p-engage .read-save button {
+.sec-central .card-body .p-info .p-engage .read-save button {
   background-color: #D2D6DB;
   border: none;
   border-radius: 5px;
@@ -163,6 +163,81 @@ body {
 .sec-central .art-var li {
   list-style: none;
   margin-top: 7px;
+}
+
+.p-post {
+  background-color: white;
+}
+
+.p-post .card {
+  margin-top: 20px;
+}
+
+.p-post .card img {
+  width: 30px;
+  height: 30px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 10px;
+}
+
+.p-post .card h6 {
+  color: #949697;
+}
+
+.p-post .p-engage {
+  margin-top: 5px;
+}
+
+.p-post .p-engage .p-likes-c {
+  margin-left: 4.5rem;
+}
+
+.p-post .p-engage .p-likes-c i {
+  color: #4D5760;
+  margin-right: 25px;
+}
+
+.discussion .card-body {
+  padding: 0;
+}
+
+.discussion form button {
+  display: none;
+  width: auto;
+  margin-right: 5px;
+}
+
+.discussion form .form-group:focus-within {
+  border: solid 1px #3B49DF;
+  -webkit-box-shadow: 1px 1px #3B49DF;
+          box-shadow: 1px 1px #3B49DF;
+}
+
+.discussion form .form-group:focus-within textarea {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  height: 8rem;
+}
+
+.discussion form .form-group:focus-within .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F9FAFA;
+  padding: 5px;
+  border-top: solid 0.5px #989999;
+}
+
+.discussion form .form-group:focus-within button {
+  display: unset;
 }
 
 @media only screen and (max-width: 576px) {
