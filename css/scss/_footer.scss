@@ -1,14 +1,61 @@
 .footer-container {
+  background-color: #d2d6db;
+  padding: 48px;
+
+
   .row {
     .footer {
+      width: 75%;
+      margin: 0 auto;
+
+
       .footer-nv {
-        ul {
-          .p-2 a {
+        .lista {
+          .p-2 {
             list-style: none;
+          }
+
+          .pt-4 {
+            .redes {
+              li {
+                a {
+                  list-style: none;
+                }
+              }
+            }
           }
         }
       }
-    }
 
+      hr {
+        border: none;
+        border-top: 1px solid #4d5760;
+        opacity: 0.15;
+        width: 20%;
+        margin: 0 auto;
+      }
+
+      .mb-2 {
+        p {
+          text-align: center;
+          color: #4d5760;
+          font-size: 14px;
+
+          a {
+            color: #202428;
+            ;
+          }
+        }
+
+
+        div {
+
+          a {
+            text-align: center;
+          }
+        }
+      }
+
+    }
   }
 }

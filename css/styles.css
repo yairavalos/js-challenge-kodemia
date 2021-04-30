@@ -198,7 +198,43 @@ body {
 /* Final sección Derecha Yair
 ----------------------------------------------------------
 */
-.footer-container .row .footer .footer-nv ul .p-2 a {
+.footer-container {
+  background-color: #d2d6db;
+  padding: 48px;
+}
+
+.footer-container .row .footer {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.footer-container .row .footer .footer-nv .lista .p-2 {
   list-style: none;
+}
+
+.footer-container .row .footer .footer-nv .lista .pt-4 .redes li a {
+  list-style: none;
+}
+
+.footer-container .row .footer hr {
+  border: none;
+  border-top: 1px solid #4d5760;
+  opacity: 0.15;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.footer-container .row .footer .mb-2 p {
+  text-align: center;
+  color: #4d5760;
+  font-size: 14px;
+}
+
+.footer-container .row .footer .mb-2 p a {
+  color: #202428;
+}
+
+.footer-container .row .footer .mb-2 div a {
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
