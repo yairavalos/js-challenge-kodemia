@@ -155,6 +155,10 @@ img.img-circle {
   margin-top: 20px;
 }
 
+.sec-central .card-body .p-info a {
+  text-decoration: none;
+}
+
 .sec-central .card-body .p-info .p-title h4 {
   font-weight: bolder;
 }
