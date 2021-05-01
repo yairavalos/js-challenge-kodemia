@@ -94,6 +94,7 @@ img.img-circle {
 .left-post .react-post {
   z-index: 10;
   position: fixed;
+  width: 100vw;
 }
 
 .left-post .react-post .d-flex li {
@@ -141,7 +142,7 @@ img.img-circle {
   border-radius: 50%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 567px) {
   .left-post .react-post {
     position: fixed;
     bottom: 0px;
@@ -151,6 +152,14 @@ img.img-circle {
             align-items: center;
     background-color: #eef0f1;
     width: 100vw;
+  }
+}
+
+@media only screen and (min-width: 567px) {
+  .left-post .react-post {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
 }
 
