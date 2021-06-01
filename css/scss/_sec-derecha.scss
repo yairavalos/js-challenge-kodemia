@@ -1,5 +1,11 @@
 /* Inicio sección Derecha Yair
 ----------------------------------------------------------
+    Afecta lo siguiente:
+    - index.html
+    - main-post.html
+
+    Por ende para main-post se genera una nueva clase, el orden
+    se lee de arriba hacia abajo
 */
 
 
@@ -8,6 +14,8 @@ a{
 }
 
 .section-right-container {
+
+    top: 60px;
 
     .card {
 
@@ -79,13 +87,12 @@ a{
 
         .profile-container{
 
-            position: relative;
-            height: 40px;
+            height: 50px;
                  
             .profile-pos{
 
                 position: absolute;
-                top: -20px;
+                top: 10px;
                 left: 20px;
                 z-index: 1;
                 width: 85%;
@@ -128,8 +135,7 @@ a{
         }
 
         .list-group{
-
-
+            
             .list-group-item{
                 border: none;
                 padding-top: 0px;
